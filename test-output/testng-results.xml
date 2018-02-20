@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="211948" started-at="2018-02-20T13:10:48Z" finished-at="2018-02-20T13:14:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="211948" started-at="2018-02-20T13:10:48Z" finished-at="2018-02-20T13:14:20Z">
+      <class name="com.qa.auto.tests.HomePageBeforeLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.auto.tests.HomePageBeforeLoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="189175" started-at="2018-02-20T18:40:48Z" finished-at="2018-02-20T18:43:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.qa.auto.tests.HomePageBeforeLoginTest@46d56d67]" name="verifyTitle" duration-ms="18" started-at="2018-02-20T18:43:57Z" finished-at="2018-02-20T18:43:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.auto.tests.HomePageBeforeLoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="9347" started-at="2018-02-20T18:43:57Z" finished-at="2018-02-20T18:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLogoDisplay()[pri:0, instance:com.qa.auto.tests.HomePageBeforeLoginTest@46d56d67]" name="verifyLogoDisplay" duration-ms="145" started-at="2018-02-20T18:44:07Z" finished-at="2018-02-20T18:44:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoDisplay -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.auto.tests.HomePageBeforeLoginTest@46d56d67]" name="setUp" is-config="true" duration-ms="10748" started-at="2018-02-20T18:44:07Z" finished-at="2018-02-20T18:44:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickSignin()[pri:0, instance:com.qa.auto.tests.HomePageBeforeLoginTest@46d56d67]" name="clickSignin" duration-ms="2488" started-at="2018-02-20T18:44:18Z" finished-at="2018-02-20T18:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignin -->
+      </class> <!-- com.qa.auto.tests.HomePageBeforeLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

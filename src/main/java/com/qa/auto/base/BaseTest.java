@@ -52,19 +52,19 @@ public class BaseTest {
 		
 		if(browserName.equals("Firefox")) {
 			
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\KusumaSaddala\\Downloads\\FF Gecko Driver\\geckodriver.exe");	
+			System.setProperty("webdriver.gecko.driver", prop.getProperty("Gecko_driverpath"));	
 			driver=new FirefoxDriver();
 			
 		}
 		else if(browserName.equals("Chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver", "/Users/kusumasaddala/Documents/SeleniumServer/chromedriver");	
+			System.setProperty("webdriver.chrome.driver", prop.getProperty("Chrome_driverpath"));	
 			driver=new ChromeDriver();
 			
 		}
 		else if(browserName.equals("IE")) {
 			
-			System.setProperty("webdriver.ie.driver", "/Users/kusumasaddala/Documents/SeleniumServer/iedriver");	
+			System.setProperty("webdriver.ie.driver", prop.getProperty("IE_driverpath"));	
 			driver=new InternetExplorerDriver();
 			
 		}

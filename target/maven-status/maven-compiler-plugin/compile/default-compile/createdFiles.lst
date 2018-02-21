@@ -1,0 +1,4 @@
+com\qa\auto\pages\LoginPage.class
+com\qa\auto\pages\HomePageAfterLogin.class
+com\qa\auto\pages\HomePageBeforeLogin.class
+com\qa\auto\base\BaseTest.class

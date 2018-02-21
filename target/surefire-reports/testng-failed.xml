@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.qa.auto.tests.LoginPageTest">
+        <methods>
+          <include name="logintest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.auto.tests.LoginPageTest -->
+      <class name="com.qa.auto.tests.HomePageBeforeLoginTest">
+        <methods>
+          <include name="verifyLogoDisplay"/>
+          <include name="setUp"/>
+          <include name="clickSignin"/>
+          <include name="verifyTitle"/>
+        </methods>
+      </class> <!-- com.qa.auto.tests.HomePageBeforeLoginTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

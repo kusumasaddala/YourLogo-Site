@@ -1,10 +1,11 @@
 package com.qa.auto.pages;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import com.qa.auto.base.BaseTest;
 
@@ -24,14 +25,7 @@ public class LoginPage extends BaseTest {
 		WebElement submitButton;
 		
 		
-		@FindBy(xpath="//a[@title='View my customer account']/span")
-		WebElement loginAccountName;
 		
-		@FindBy(xpath="//a[@title='Women']")
-		static WebElement womenMenu;
-		
-		@FindBy(xpath="//a[@title='Blouses']")
-		static WebElement blousesSubMenu;
 		
 		
 		
@@ -44,33 +38,30 @@ public class LoginPage extends BaseTest {
 			
 			
 		//Actions - Methods
+			
+			@Test(priority=2)
+			public HomePageAfterLogin login(String userName,String passwd) {
+				
+				emailID.sendKeys(userName);
+				password.sendKeys(passwd);
+				submitButton.click();
+				
+				return new HomePageAfterLogin();
+				
+				
+			}
+			
+			
+			
+			@Test(priority=1)
 			public String verifyLoginPageTitle() {
 				
 				return driver.getTitle();		
 			
 			}
 			
-			public String verifyAccountName() {
-				
-				return loginAccountName.getText();
-				
-			}
 			
-			public static void mouseOverMenu() {							
-				
-			action.moveToElement(womenMenu).build().perform();
-			}
-			
-			public static void selectWomenMenuOptions(String title) {
-				
-				driver.findElement(By.xpath("//a[@title='"+title+"']")).click();
-				
-				
-				
-				
-				
-				
-			}
+}
 			
 			
 			
@@ -78,4 +69,4 @@ public class LoginPage extends BaseTest {
 			
 			
 	
-}
+
